@@ -16,3 +16,9 @@
     color: white;
     opacity: 0.5;
 }
+
+body {
+    background-image: url("../../assets/BG.png");
+    background-color: #cccccc;
+    background-size: 35%;
+  }
