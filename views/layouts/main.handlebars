@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 <body>
-  <header class="display-flex justify-space-between align-center p-2">
+  <header class="hero bg-primary">
     <h1>
-      Project 2
+      Super Awesome Project #2
     </h1>
     <!-- Only display the logout button if the user is logged in -->
     {{#if logged_in}}
@@ -23,7 +23,7 @@
     </nav>
     {{/if}}
   </header>
-  <main class="container container-fluid mt-5">
+  <main>
     {{{ body }}}
   </main>
   <footer>
@@ -31,9 +31,10 @@
   </footer>
 
   <!-- Only include the logout script if the user is logged in -->
-  {{!-- {{#if logged_in}} --}}
+  {{#if logged_in}}
   <script src="../../public/js/logout.js"></script>
-  {{!-- {{/if}} --}}
+  {{/if}}
+  <script src="../javascript/script.js"></script>
 </body>
 
 </html>

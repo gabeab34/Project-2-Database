@@ -4,6 +4,7 @@
 
   .hero {
       color: white;
+      padding-bottom: 0.5%;
       border-radius: 0;
       margin-bottom: 2%;
       background: linear-gradient(
@@ -20,5 +21,40 @@
 body {
     background-image: url("BG.png");
     background-color: #cccccc;
-    background-size: 35%;
+    background-size: 30%;
+    text-align: center;
+    color: black;
   }
+
+form {
+    width: 100%;
+    text-align: center;
+  }
+  
+form .form-group {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0.625rem 0;
+  }
+  
+form .form-input,
+form .form-textarea {
+    display: block;
+  }
+
+form .form-input {
+    width: 20%;
+    padding: 0.75rem;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    margin: 0.625rem 0;
+    font-size: 1.2rem;
+    border: 1px solid #484848;
+    border-radius: 0.3rem;
+    display: inline-block;
+  }
+
+.login-form {
+  color: white;
+}

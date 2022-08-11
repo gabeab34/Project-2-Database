@@ -3,8 +3,10 @@ const loginFormHandler = async (event) => {
   event.preventDefault();
 
   // Gather the data from the form elements on the page
-  const email = document.querySelector("#email-login").value.trim();
-  const password = document.querySelector("#password-login").value.trim();
+  const name = document.querySelector("#name-login").value;
+  const tag = document.querySelector("#tag-login").value;
+  const email = document.querySelector("#email-login").value;
+  const password = document.querySelector("#password-login").value;
 
   if (email && password) {
     // Send the e-mail and password to the server
