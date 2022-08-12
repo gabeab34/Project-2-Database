@@ -44,6 +44,6 @@ db.sequelize = sequelize;
 
 module.exports = db;
 
-const User = require("./User");
+const User = require("./user.js");
 
 module.exports = { User };
