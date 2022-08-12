@@ -38,4 +38,17 @@ router.post("/logout", (req, res) => {
   }
 });
 
+router.post("/signup", (req, res) => {
+  // Use Sequelize's `create()` method to add a row to the table
+  // Similar to `INSERT INTO` in plain SQL
+  User.create(req.body)
+    .then((newUser) => {
+      // Send the newly created row as a JSON object
+      res.json(newUser);
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+});
+
 module.exports = router;

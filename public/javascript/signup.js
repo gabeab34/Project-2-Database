@@ -7,7 +7,7 @@ const signupFormHandler = async (event) => {
   const password = document.querySelector("#password-signup").value;
 
   if (name && tag && email && password) {
-    const response = await fetch("../controllers/api/user_route", {
+    const response = await fetch("/api/users/signup", {
       method: "POST",
       body: JSON.stringify({ name, tag, email, password }),
       headers: { "Content-Type": "application/json" },
