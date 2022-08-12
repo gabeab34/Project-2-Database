@@ -55,6 +55,6 @@ form .form-input {
     display: inline-block;
   }
 
-.signup-form {
+.signup-form .login-form {
   color: white;
 }
