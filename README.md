@@ -1,17 +1,21 @@
 # Project-2-Database
 
-Project-2-Database
+##Project-2-Database
 P2D is an App that allows organizations and communities the abilitiy to connect, grow, and cultivate competitive e-sports players. This app allows the users the abilities to track and create standings for their communities as well as help connect sponsors.   
 
 Link to website via Heroku: 
 
-Motivation
+##Motivation
 The aim of P2D is to provide entertainment, competition, and a community for everything eSports. 
 
-Main features
-Standings for any game you would like to create a circuit/season 
+##Main features
+Standings for any game you would like to create a circuit/season for
+Crowdfunding via matcherino or donations for events
 
-Technologies
+##Instructions
+
+
+##Technologies
 Node
 Express
 Startgg API
@@ -20,7 +24,7 @@ GraphQL
 Bootstrap
 Heroku
 
-Developers
+##Developers
 John Evenden
 Richard Tran
 Connor Breslin
