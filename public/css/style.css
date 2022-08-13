@@ -21,7 +21,7 @@
 body {
     background-image: url("BG.png");
     background-color: #cccccc;
-    background-size: 30%;
+    background-size: 100%;
     text-align: center;
     color: black;
   }
@@ -57,4 +57,8 @@ form .form-input {
 
 .signup-form .login-form {
   color: white;
+}
+
+.jumbotron {
+  background: rgba(204, 204, 204, 0.685);
 }
