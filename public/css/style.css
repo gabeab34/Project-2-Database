@@ -58,3 +58,7 @@ form .form-input {
 .signup-form .login-form {
   color: white;
 }
+
+.jumbotron {
+  background: rgba(204, 204, 204, 0.685);
+}
