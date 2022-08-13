@@ -3,7 +3,7 @@ const { User } = require("../../models");
 
 router.post("/login", async (req, res) => {
   try {
-    const userData = await User.findOne({ where: { email: req.body.email } });
+    const userData = await User.findOne({ where: { tag: req.body.tag } });
 
     if (!userData) {
       res.status(400).json({ message: "User not found" });
@@ -36,6 +36,23 @@ router.post("/logout", (req, res) => {
   } else {
     res.status(404).end();
   }
+});
+
+router.post("/signup", (req, res) => {
+  console.log(req.body.name);
+  User.create({
+    name: req.body.name,
+    tag: req.body.tag,
+    email: req.body.email,
+    password: req.body.password,
+  })
+    .then((newUser) => {
+      res.json(newUser);
+      return newUser;
+    })
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 module.exports = router;
