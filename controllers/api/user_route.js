@@ -38,4 +38,21 @@ router.post("/logout", (req, res) => {
   }
 });
 
+router.post("/signup", (req, res) => {
+  console.log(req.body.name);
+  User.create({
+    name: req.body.name,
+    tag: req.body.tag,
+    email: req.body.email,
+    password: req.body.password,
+  })
+    .then((newUser) => {
+      res.json(newUser);
+      return newUser;
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+});
+
 module.exports = router;
