@@ -10,12 +10,8 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ tag, password }),
       headers: { "Content-Type": "application/json" },
     });
-
     if (response.ok) {
-
-      document.location.replace("/homepage");
-
-
+      document.location.replace("/");
     } else {
       alert("Failed to log in");
     }
