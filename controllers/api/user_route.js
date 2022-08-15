@@ -9,18 +9,14 @@ router.post("/login", async (req, res) => {
       res.status(400).json({ message: "User not found" });
       return;
     }
-
     const validPassword = await userData.checkPassword(req.body.password);
-
     if (!validPassword) {
       res.status(404).json({ message: "Invalid password, please try again" });
       return;
     }
-
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-
       res.json({ user: userData, message: "You are now logged in!" });
     });
   } catch (err) {
@@ -39,7 +35,6 @@ router.post("/logout", (req, res) => {
 });
 
 router.post("/signup", (req, res) => {
-  console.log(req.body.name);
   User.create({
     name: req.body.name,
     tag: req.body.tag,
