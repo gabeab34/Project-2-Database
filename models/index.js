@@ -44,7 +44,7 @@ db.sequelize = sequelize;
 
 module.exports = db;
 
-const User = require("./User.js");
+const User = require("./user.js");
 const Match = require("./Match.js");
 const Event = require("./Event.js");
 
