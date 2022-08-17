@@ -13,3 +13,22 @@
 //   }
 //   res.render("firstvisit");
 // });
+
+// Additional User Data:
+
+// donation: {
+//     type: DataTypes.STRING,
+//     allowNull: true,
+//   },
+//   matcherio: {
+//     type: DataTypes.STRING,
+//     allowNull: true,
+//   },
+//   sponsor: {
+//     type: DataTypes.STRING,
+//     allowNull: true,
+//   },
+//   contact: {
+//     type: DataTypes.STRING,
+//     allowNull: true,
+//   },
