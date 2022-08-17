@@ -1,3 +1,14 @@
+  <header class="hero bg-primary navbar sticky-top">
+    <h1>
+      Fight!
+    </h1>
+    <!-- Only display the logout button if the user is logged in -->
+    {{#if logged_in}}
+    <nav>
+      <button class="btn btn-outline-dark" id="logout">logout</button>
+    </nav>
+    {{/if}}
+  </header>
 {{#each users as |User| }}
 <div class="row align-center mb-5">
   <div class="col-md-6">

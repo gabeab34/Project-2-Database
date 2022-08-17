@@ -1,3 +1,14 @@
+  <header class="hero bg-primary navbar sticky-top">
+    <h1>
+      Welcome! 
+    </h1>
+    <!-- Only display the logout button if the user is logged in -->
+    {{#if logged_in}}
+    <nav>
+      <button class="btn btn-outline-dark" id="logout">logout</button>
+    </nav>
+    {{/if}}
+  </header>
 <div class="jumbotron">
   <h2 class="signup-form">You wanna Smash?</h2>
   <p class="lead">If this is your first time here, please sign to get started, otherwise - Login!</p>
