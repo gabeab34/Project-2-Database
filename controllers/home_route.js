@@ -29,4 +29,8 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+router.get("/profile", (req, res, next) => {
+  res.render("event");
+});
+
 module.exports = router;
