@@ -23,7 +23,12 @@ Event.init(
       },
     character: {
       type: DataTypes.STRING,
-    },
+      allowNull: false,
+    },    
+    biography: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   },
   {
     sequelize,
