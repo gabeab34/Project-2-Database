@@ -21,6 +21,19 @@ router.get("/", withAuth, async (req, res) => {
   }
 });
 
+router.get("/profile", async (req, res) => {
+  try {
+    const userProfile = await User.findOne({
+      where: { id: req.session.user_id },
+    });
+    res.render("profile", {
+      userProfile,
+    });
+  } catch (error) {
+    res.status(404).json(err);
+  }
+});
+
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
