@@ -54,10 +54,10 @@ const Event = require("./Event.js");
 // Event.hasMany(Match, {
 //   foreignKey: "eventID",
 // });
-Match.belongsTo(User, {
-  foreignKey: "player1",
+Event.belongsTo(User, {
+  foreignKey: "id",
 });
-User.hasMany(Match, {
-  foreignKey: "player1",
+User.hasMany(Event, {
+  foreignKey: "id",
 });
-module.exports = { User, Match };
+module.exports = { User, Event };
