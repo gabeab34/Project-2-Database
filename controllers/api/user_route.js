@@ -24,6 +24,25 @@ router.post("/login", async (req, res) => {
   }
 });
 
+router.post("/signup", (req, res) => {
+  User.create({
+    name: req.body.name,
+    tag: req.body.tag,
+    email: req.body.email,
+    password: req.body.password,
+  })
+    .then((newUser) => {
+      req.session.save(() => {
+        req.session.user_id = newUser.id;
+        req.session.logged_in = true;
+        res.json({ user: newUser, message: "You are now logged in!" });
+      });
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+});
+
 router.post("/logout", (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
