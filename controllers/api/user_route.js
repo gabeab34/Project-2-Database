@@ -47,8 +47,8 @@ router.post("/signup", (req, res) => {
         req.session.logged_in = true;
         res.json({ user: newUser, message: "You are now logged in!" });
       });
-      res.json(newUser);
-      return newUser;
+      // res.json(newUser);
+      // return newUser;
     })
     .catch((err) => {
       res.json(err);
