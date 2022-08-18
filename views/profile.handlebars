@@ -1,0 +1,26 @@
+<header class="hero bg-primary navbar sticky-top">
+    <h1>
+      Profile
+    </h1>
+    <!-- Only display the logout button if the user is logged in -->
+    {{#if logged_in}}
+    <nav>
+      <button class="btn btn-outline-dark" id="logout">Logout</button>
+      <button class="btn btn-outline-dark" id="profile"><a href="/event">Add Event</a></button>
+    </nav>
+    {{/if}}
+  </header>
+
+<div class="row align-center mb-5">
+  <div class="col-md-6">
+    <h2>{{uName}}</h2>
+  </div>
+    <div class="col-md-6">
+    <h2>{{uTag}}</h2>
+  </div>
+  <div class="col-md-6">
+    <h3><a href="mailto:{{uEmail}}">{{uEmail}}</a></h3>
+  </div>
+</div>
+
+{{!-- <script src="/js/profile.js"></script> --}}
