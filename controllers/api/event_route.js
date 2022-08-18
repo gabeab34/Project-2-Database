@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const { User, Event } = require("../../models");
-//const { Event } = require("../../models");
 const { rest } = require("lodash");
 
 // router.post("/", async (req, res) => {
