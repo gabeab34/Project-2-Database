@@ -53,4 +53,13 @@ router.post("/logout", (req, res) => {
   }
 });
 
+router.get("/profile", async (req, res, next) => {
+  const userData = await User.findOne({ where: { id: req.session.user_id } });
+
+  res.render("profile"),
+    {
+      userData,
+    };
+});
+
 module.exports = router;
