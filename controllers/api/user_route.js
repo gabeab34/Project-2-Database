@@ -34,25 +34,4 @@ router.post("/logout", (req, res) => {
   }
 });
 
-router.post("/signup", (req, res) => {
-  User.create({
-    name: req.body.name,
-    tag: req.body.tag,
-    email: req.body.email,
-    password: req.body.password,
-  })
-    .then((newUser) => {
-      req.session.save(() => {
-        req.session.user_id = newUser.id;
-        req.session.logged_in = true;
-        res.json({ user: newUser, message: "You are now logged in!" });
-      });
-      // res.json(newUser);
-      // return newUser;
-    })
-    .catch((err) => {
-      res.json(err);
-    });
-});
-
 module.exports = router;
