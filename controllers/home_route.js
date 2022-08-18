@@ -26,10 +26,14 @@ router.get("/profile", async (req, res) => {
     const userProfile = await User.findOne({
       where: { id: req.session.user_id },
     });
+    userProfile.name = uName;
+    userProfile.tag = uTag;
+    userProfile.email = uEmail;
     res.render("profile", {
-      userProfile,
+      uName,
+      logged_in: req.session.logged_in,
     });
-  } catch (error) {
+  } catch (err) {
     res.status(404).json(err);
   }
 });
