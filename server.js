@@ -5,6 +5,8 @@ const exphbs = require("express-handlebars");
 const routes = require("./controllers");
 const sequelize = require("./config/connection");
 const helpers = require("./utils/helpers");
+// const Api2Pdf = require('api2pdf');   
+// const a2pClient = new Api2Pdf('');
 
 // Initializes Sequelize with session store
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
@@ -48,3 +50,7 @@ sequelize.sync({ force: false }).then(() => {
     )
   );
 });
+
+// a2pClient.wkUrlToPdf('https://www.github.com').then(function(result) {
+//     console.log(result);
+// });
