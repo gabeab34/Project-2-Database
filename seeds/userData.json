@@ -1,32 +1,42 @@
 [
   {
     "name": "Sal",
-    "tag": "Thundercock",
+    "tag": "Thunder",
     "email": "sal@hotmail.com",
+    "phone": "4044585256",
+    "region": "southeast",
     "password": "password12345"
   },
   {
     "name": "Lernantino",
-    "tag": "Hyperwang",
+    "tag": "Hyper",
     "email": "lernantino@gmail.com",
+    "phone": "4044585256",
+    "region": "southeast",
     "password": "password12345"
   },
   {
     "name": "Amiko",
-    "tag": "Megaschween",
+    "tag": "Mega",
     "email": "amiko2k20@aol.com",
+    "phone": "4044585256",
+    "region": "southeast",
     "password": "password12345"
   },
   {
     "name": "Jordan",
-    "tag": "Gigadick",
+    "tag": "Giga",
     "email": "jordan99@msn.com",
+    "phone": "4044585256",
+    "region": "southeast",
     "password": "password12345"
   },
   {
     "name": "Blake",
-    "tag": "Uberschlong",
+    "tag": "Uber",
     "email": "the_blake@yahoo.com",
+    "phone": "4044585256",
+    "region": "southeast",
     "password": "password12345"
   }
 ]

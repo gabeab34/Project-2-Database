@@ -29,6 +29,8 @@ router.post("/signup", (req, res) => {
     name: req.body.name,
     tag: req.body.tag,
     email: req.body.email,
+    phone: req.body.phone,
+    region: req.body.region,
     password: req.body.password,
   })
     .then((newUser) => {
