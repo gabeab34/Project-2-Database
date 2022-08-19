@@ -10,7 +10,15 @@
     {{/if}}
   </header>
 
-{{#each users as |User| }}
+<div class="search">
+  <input type="search" class="search-box" />
+  <span class="search-button">
+    <span class="search-icon"></span>
+  </span>
+</div>
+
+<script src="/js/profile.js"></script>
+{{!-- {{#each users as |User| }}
 <div class="row align-center mb-5">
   <div class="col-md-6">
     <h2>{{User.name}}</h2>
@@ -22,4 +30,4 @@
     <h3><a href="mailto:{{User.email}}">{{User.email}}</a></h3>
   </div>
 </div>
-{{/each}}
+{{/each}} --}}

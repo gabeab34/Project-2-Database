@@ -20,3 +20,6 @@
 // document
 //   .querySelector(".profile-form")
 //   .addEventListener("submit", loginFormHandler);
+$('.search-button').click(function(){
+    $(this).parent().toggleClass('open');
+  });
