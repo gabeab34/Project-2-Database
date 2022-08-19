@@ -45,15 +45,8 @@ db.sequelize = sequelize;
 module.exports = db;
 
 const User = require("./user.js");
-// const Match = require("./Match.js");
 const Event = require("./Event.js");
 
-// Match.belongsTo(Event, {
-//   foreignKey: "eventID",
-// });
-// Event.hasMany(Match, {
-//   foreignKey: "eventID",
-// });
 Event.belongsTo(User, {
   foreignKey: "id",
 });
