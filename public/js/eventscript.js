@@ -4,12 +4,12 @@ const eventFormHandler = async (event) => {
   const tournament = document.querySelector("#tournament-event").value;
   const standings = document.querySelector("#standings-event").value;
   const character = document.querySelector("#character-event").value;
-  // const biography = document.querySelector("#biography-event").value;
+  const biography = document.querySelector("#biography-event").value;
 
-  if (tournament && standings && character) {
+  if (tournament && standings && character && biography) {
     const response = await fetch("api/event/eventscript", {
       method: "POST",
-      body: JSON.stringify({ tournament, standings, character }),
+      body: JSON.stringify({ tournament, standings, character, biography }),
       headers: { "Content-Type": "application/json" },
     });
 
