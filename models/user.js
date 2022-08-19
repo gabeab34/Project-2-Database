@@ -32,6 +32,12 @@ User.init(
         isEmail: true,
       },
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'event',
+        key: 'id',
+      } },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -47,6 +53,7 @@ User.init(
         return newUserData;
       },
     },
+    
     sequelize,
     timestamps: false,
     freezeTableName: true,
