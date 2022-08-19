@@ -1,3 +1,16 @@
+<header class="hero bg-primary navbar sticky-top">
+    <h1>
+      Add to your profile!
+    </h1>
+    <!-- Only display the logout button if the user is logged in -->
+    {{!-- {{#if logged_in}} --}}
+    <nav>
+      {{!-- <button class="btn btn-outline-dark" id="logout">Logout</button> --}}
+      <button class="btn btn-outline-dark" id="profile"><a href="/profile">Profile</a></button>
+    </nav>
+    {{!-- {{/if}} --}}
+  </header>
+
 <section class="vh-50">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -10,7 +23,7 @@
                 <form class="event-form">
 
                   <div class="div-center">
-                    <h2>User Registration Form</h2>
+                    <h2>User Info</h2>
                     {{!-- <img width="400" height="200" class="img-responsive" src="https://giffiles.alphacoders.com/649/6490.gif" alt="Gif ID: 6490" title="Anime Dragon Ball Z Gif"> --}}
                     <img class="photo" src="https://64.media.tumblr.com/4b33218bc4151882d5bd0e14cb3b331f/tumblr_o9nluvpJtS1tkb22po1_500.gifv" alt="">
                   </div>
