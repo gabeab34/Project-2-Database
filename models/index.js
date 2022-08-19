@@ -47,10 +47,12 @@ module.exports = db;
 const User = require("./user.js");
 const Event = require("./Event.js");
 
-Event.belongsTo(User, {
-  foreignKey: "id",
-});
 User.hasMany(Event, {
-  foreignKey: "id",
+  foreignKey: "user_id",
 });
+
+Event.belongsTo(User, {
+  foreignKey: "user_id",
+});
+
 module.exports = { User, Event };

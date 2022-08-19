@@ -16,19 +16,25 @@ Event.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    standings: 
-      {
-        type: DataTypes.INTEGER, 
-        allowNull: false,
-      },
+    standings: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     character: {
       type: DataTypes.STRING,
       allowNull: false,
-    },    
+    },
     biography: {
       type: DataTypes.STRING,
-      allowNull: false,
-    }
+      allowNull: true,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "user",
+        key: "id",
+      },
+    },
   },
   {
     sequelize,
