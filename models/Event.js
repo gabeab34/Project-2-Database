@@ -25,10 +25,6 @@ Event.init(
       type: DataTypes.STRING,
       allowNull: false,
     },    
-    biography: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    }
   },
   {
     sequelize,

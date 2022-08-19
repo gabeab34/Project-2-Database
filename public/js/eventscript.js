@@ -6,10 +6,10 @@ const eventFormHandler = async (event) => {
   const character = document.querySelector("#character-event").value;
 
 
-  if (tournament && standings && character && biography) {
+  if (tournament && standings && character) {
     const response = await fetch("api/event/eventscript", {
       method: "POST",
-      body: JSON.stringify({ tournament, standings, character, biography }),
+      body: JSON.stringify({ tournament, standings, character }),
       headers: { "Content-Type": "application/json" },
     });
 
