@@ -1,27 +1,106 @@
-<header class="hero bg-primary navbar sticky-top">
-    <h1>
-      Smash!
-    </h1>
-    {{#if logged_in}}
-    <nav>
-      <button class="btn btn-outline-dark" id="logout">Logout</button>
-      <button class="btn btn-outline-dark" id="profile"><a href="/profile">Profile</a></button>
-    </nav>
-    {{/if}}
-  </header>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-{{!-- 
-<script src="/js/profile.js"></script>
-{{#each users as |User| }}
-<div class="row align-center mb-5">
-  <div class="col-md-6">
-    <h2>{{User.name}}</h2>
-  </div>
-    <div class="col-md-6">
-    <h2>{{User.tag}}</h2>
-  </div>
-  <div class="col-md-6">
-    <h3><a href="mailto:{{User.email}}">{{User.email}}</a></h3>
-  </div>
-</div>
-{{/each}} --}}
+<header class="hero bg-primary navbar sticky-top">
+
+  <h1>
+    Welcome!
+
+  </h1>
+  {{#if logged_in}}
+  <nav>
+    <button class="btn btn-outline-dark" id="logout">Logout</button>
+    <button class="btn btn-outline-dark" id="profile"><a href="/profile">Profile</a></button>
+  </nav>
+  {{/if}}
+</header>
+
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="100" <div class="content-wrapper">
+  <div class="container" style="border-radius: 1rem">
+  <section style="border-radius: 1rem; background-color: rgba(255, 255, 255, 0.925)" class="features-overview"
+                  id="features-section">
+                  <div class="content-header">
+                    <h2>How does it works</h2>
+                    <h5 class="section-subtitle text-muted">We will help create a recruiting profile and get discoverd.
+                      Preparing your profile will help high school players with college varsity recruiters.
+
+                      <br>One of the fastest-growing sports in the world is played on a computer. Short for electronic
+                      sports, esports are team-based video game competitions watched in person or online by spectators
+                      on Twitch.
+                      Like traditional sports, players wear team jerseys, compete in arenas and communicate with
+                      teammates and coaches as the game unfolds. In 2019, the global esports industry is expected to hit
+                      $1.1 billion and capture a fanbase of 454 million.
+                    </h5>
+                  </div>
+                  <div class="d-md-flex justify-content-between">
+                    <div class="grid-margin d-flex justify-content-start">
+                      <div class="features-width">
+                        <img src="image" alt="" class="img-icons">
+                        <h4 class="py-3">Highlights via <br>Twitch or YouTube</h4>
+                        <p class="text-muted">Put your skills on display.</p>
+                      </div>
+                    </div>
+                    <div class="grid-margin d-flex justify-content-center">
+                      <div class="features-width">
+                        <img src="images/Group7.svg" alt="" class="img-icons">
+                        <h4 class="py-3">Check the Esports<br>Power Ranking</h4>
+                        <p class="text-muted">With over 151 Colleges in partnership with NACE aka <br>National Association
+                          of College Esports.</p>
+                        <a href="https://www.ncsasports.org/best-colleges/best-esports-colleges">
+                          <p class="readmore-link">Esports Rankings</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="grid-margin d-flex justify-content-end">
+                      <div class="features-width">
+                        <img src="images/Group5.svg" alt="" class="img-icons">
+                        <h4 class="py-3">What games can you get Esports<br>scholorships for?</h4>
+                        <p class="text-muted">Varsity programs award Esports scholorships <br> gamers who excel in a wide
+                          range of popular titles.</p>
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">View Popular Titles</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>League of Legends (LoL)</p>
+        <p>Defense of the Ancients (DOTA) 2</p>
+        <p>Smite</p>
+        <p>Heroes of the Storm</p>
+        <p>Overwatch</p>
+        <p>Fortnite</p>
+        <p>Counter-Strike: Global Offensive (CS:GO)</p>
+        <p>Players Unknown Battlegrounds (PUBG)</p>
+        <p>Hearthstone</p>
+        <p>StarCraft II</p>
+        <p>Rocket League</p>
+        <p>FIFA</p>
+        <p>Madden</p>
+        <p>Street Fighter</p>
+        <p>Mortal Kombat</p>
+        <p>Super Smash</p>
+
+      </div>
+    </div>
+</section>
+
+--------- 
+
+  <section style="border-radius: 1rem; background-color: rgba(255, 255, 255, 0.925)" class="digital-marketing-service">  
+                  <div class="grid-margin d-flex justify-content-center">
+                    <div class="col-12 col-lg-5 flex-item grid-margin">
+                      <h3 class="m-0">Let's build your profile<br>today.</h3>
+                      <div class="grid-margin d-flex justify-content-center">
+                        <p>Leverage your profile and share with recruiters and college coaches.
+                        <br>
+                        Use your skills and earn a scholorship in your passion.</p>
+                      </div>
+                      <button class="btn btn-outline-dark" id="signup"><a href="/signup">Create Your Profile</a></button>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+</section>
+</body>
