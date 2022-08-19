@@ -29,6 +29,7 @@ Event.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+<<<<<<< HEAD
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -37,6 +38,8 @@ Event.init(
       }
     }
 
+=======
+>>>>>>> 8ba5f797750c2021673b65ac1ae78dd620c65635
   },
   {
     sequelize,
