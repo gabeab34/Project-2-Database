@@ -50,6 +50,7 @@ const Event = require("./Event.js");
 User.hasMany(Event, {
   foreignKey: "user_id", targetKey: 'id',
   onDelete: 'CASCADE',
+
 });
 
 Event.belongsTo(User, {
