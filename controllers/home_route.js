@@ -29,10 +29,14 @@ router.get("/profile", async (req, res) => {
     uName = userProfile.name;
     uTag = userProfile.tag;
     uEmail = userProfile.email;
+    uPhone = userProfile.phone;
+    uRegion = userProfile.region;
     res.render("profile", {
       uName,
       uTag,
       uEmail,
+      uPhone,
+      uRegion,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
