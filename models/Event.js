@@ -18,7 +18,7 @@ Event.init(
     },
     standings: 
       {
-        type: DataTypes.INTEGER, 
+        type: DataTypes.STRING, 
         allowNull: false,
       },
     character: {
@@ -36,13 +36,14 @@ Event.init(
         key: 'id',
       }
     }
+
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "Event",
+    modelName: "event",
   }
 );
 
