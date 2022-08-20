@@ -6,7 +6,6 @@ cloudinary.config({
 
   console.log(cloudinary.config());
 
-  const imagePath = "Project-2-Database\public\css\BG.png";
   const uploadImage = async (imagePath) => {
 
     // Use the uploaded file's name as the asset's public ID and 
