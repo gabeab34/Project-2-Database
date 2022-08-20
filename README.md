@@ -37,10 +37,10 @@
   
 
   ## Contributions: 
-  * John Evenden 
-  * Gabriel Adams Bogar
+  * John Evenden (https://github.com/Jevenden)
+  * Gabriel Adams Bogar (https://github.com/gabeab34)
   * Richard Tran (https://github.com/rtran1029)
-  * Connor Breslin
+  * Connor Breslin (https://github.com/CTBreslin)
   * Jesus Velez (https://github.com/JVelezFD)
 
   ## Website: 
