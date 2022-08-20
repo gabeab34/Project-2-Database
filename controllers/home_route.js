@@ -24,18 +24,21 @@ router.get("/profile", async (req, res) => {
   try {
     const userProfile = await User.findOne({
       where: { id: req.session.user_id },
+      include: [{ model: Event }],
     });
     uName = userProfile.name;
     uTag = userProfile.tag;
     uEmail = userProfile.email;
     uPhone = userProfile.phone;
     uRegion = userProfile.region;
+    uEvent = userProfile.Events;
     res.render("profile", {
       uName,
       uTag,
       uEmail,
       uPhone,
       uRegion,
+      uEvent,
       logged_in: req.session.logged_in,
     });
   } catch (err) {

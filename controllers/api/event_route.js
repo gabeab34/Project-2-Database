@@ -7,12 +7,9 @@ router.post("/eventscript", (req, res) => {
     tournament: req.body.tournament,
     standings: req.body.standings,
     character: req.body.character,
+    user_id: req.session.user_id,
   })
     .then((newEvent) => {
-      req.session.save(() => {
-        req.session.user_id = newEvent.id;
-        req.session.logged_in = true;
-      });
       res.json({ event: newEvent, message: "got your info" });
     })
     .catch((err) => {
