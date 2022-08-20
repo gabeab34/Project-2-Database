@@ -10,7 +10,7 @@
 
   * [Motivation](#Motivation)
 
-  * [Main Features](#MainFeatures)
+  * [Features](#Features)
 
   * [Contributions](#Contributions)
 
@@ -26,7 +26,7 @@
   ## Motivation: 
   The aim was to educate parents, high schoolers of the esports growth within the collegiate arena and the scholarship potential
   
-  ## Main Features: 
+  ## Features: 
   * eSports Profile creation
   * National Assoc of Collegiate eSports reourse access
   * NCSA recruiting resource access
