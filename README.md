@@ -10,7 +10,7 @@
 
   * [Motivation](#Motivation)
 
-  * [Main Features](#Main Features)
+  * [Main Features](#MainFeatures)
 
   * [Contributions](#Contributions)
 
