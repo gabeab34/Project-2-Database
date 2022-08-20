@@ -50,5 +50,5 @@
 
   [Email](mailto:gabeab34@gmail.com)
 
-  [GitHub](https://github.com/gabeab34)
+  [GitHub](https://github.com/gabeab34)(https://github.com/JVelezFD)
 
