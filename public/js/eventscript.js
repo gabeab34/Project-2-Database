@@ -14,9 +14,9 @@ const eventFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/");
+      document.location.replace("/profile");
     } else {
-      alert("Failed Input Stats");
+      alert("Failed To Input Stats");
     }
   }
 };
