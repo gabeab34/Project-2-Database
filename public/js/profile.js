@@ -1,6 +1,8 @@
 // const profileFormHandler = async (event) => {
 //   event.preventDefault();
 
+const { json } = require("body-parser");
+
 //   const userData = await User.findOne({ where: { id: req.session.user_id } });
 
 //   if (tag && password) {
@@ -47,34 +49,41 @@ Socials = localStorage.getItem ("socials");
 Sponsors = localStorage.getItem ("sponsors");
 Platform = localStorage.getItem ("platform");
 
+function loadForm(){
+    document.getElementById("profileSocials").placeholder = JSON.parse(localStorage.getItem(`${Socials}`))};
+
 formHolder.push(Socials, Sponsors, Platform);
 //formHolder.push(formData.value);
 localStorage.setItem("formHOlder", JSON.stringify(formHolder));
+loadForm();
 });
 
-function loadForm(){
-    var formParse = JSON.parce(localStorage.getItem(formHolder));
-    var formID;
-        var formValue;
-        var formType;
+// function loadForm(){
+// document.getElementById("profileSocials").placeholder = `${Socials}`
 
-        $.each(formParse, function (key, value){
-                    formID = key;
-                    formValue =value; 
+
+//     // var formParse = JSON.parce(localStorage.getItem(formHolder));
+//     // var formID;
+//     //     var formValue;
+//     //     var formType;
+
+//     //     $.each(formParse, function (key, value){
+//     //                 formID = key;
+//     //                 formValue =value; 
             
-                    if (formValue === "true" || formValue === "false"){
-                        formType = formValue;
-                    }
-                });
-                $.formfield.each(function(){
-                    formID = this.id;
-                    document.getElementById(formID);
+//     //                 if (formValue === "true" || formValue === "false"){
+//     //                     formType = formValue;
+//     //                 }
+//     //             });
+//     //             $.formfield.each(function(){
+//     //                 formID = this.id;
+//     //                 document.getElementById(formID);
 
-                    if (formType === "true") {
-                        $(formID).val;
-                    }else $(formID).val(formValue);})               
+//     //                 if (formType === "true") {
+//     //                     $(formID).val;
+//     //                 }else $(formID).val(formValue);})               
                 
-};
+// };
 
 // function loadForm() {
 //     var formParse = JSON.parce(localStorage.getItem('socials', 'sponsors', 'platform'));
