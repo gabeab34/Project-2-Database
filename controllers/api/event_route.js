@@ -7,7 +7,6 @@ router.post("/eventscript", (req, res) => {
     tournament: req.body.tournament,
     standings: req.body.standings,
     character: req.body.character,
-    biography: req.body.biography,
   })
     .then((newEvent) => {
       req.session.save(() => {
