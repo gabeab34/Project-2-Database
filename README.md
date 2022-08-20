@@ -37,11 +37,11 @@
   
 
   ## Contributions: 
-  John Evenden
-  Gabriel Adams Bogar
-  Richard Tran
-  Connor Breslin
-  Jesus Velez
+  * John Evenden
+  * Gabriel Adams Bogar
+  * Richard Tran
+  * Connor Breslin
+  * Jesus Velez
 
   ## Deployed App Link: 
   
