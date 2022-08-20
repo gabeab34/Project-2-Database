@@ -8,25 +8,28 @@
 
   * [Description](#Description)
 
-  * [Installation](#Installation)
+  * [Motivation](#Motivation)
 
-  * [Usage](#Usage)
+  * [Main Features](#Main Features)
 
   * [Contributions](#Contributions)
 
-  * [Test](#Tests)
+  * [Deployed App Link](#Deployed App Link)
 
   * [Email](#Questions)
 
   * [Github](#Questions)
 
   ## Description: 
-  this is my project
+  The app will allow users to create esports profiles to share with potential recruiters for collegiate esports scholarship opportunities
 
-  ## Installation: 
+  ## Motivation: 
+  The aim was to educate parents, high schoolers of the esports growth within the collegiate arena and the scholarship potential
   
-  
-  ## Usage: 
+  ## Main Features: 
+  * eSports Profile creation
+  * National Assoc of Collegiate eSports reourse access
+  * NCSA recruiting resource access
   
 
   ## License:
@@ -34,9 +37,13 @@
   
 
   ## Contributions: 
-  
+  John Evenden
+  Gabriel Adams Bogar
+  Richard Tran
+  Connor Breslin
+  Jesus Velez
 
-  ## Tests: 
+  ## Deployed App Link: 
   
 
   ## Questions:
