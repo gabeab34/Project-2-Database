@@ -29,22 +29,33 @@
             </div>
           </div>
         </div>
-        <div class="card mb-4 mb-lg-0">
+          <div class="card mb-4 mb-lg-0">
           <div class="card-body p-0">
-            <ul class="list-group list-group-flush rounded-3">
-              <li class="list-group-item justify-content-between align-items-center p-3">
-                <i class="far fa-money-bill-alt" style="color: #1e911e;"></i>
-                <p class="mb-0">matcherino.com</p>
-              </li>
-              <li class="list-group-item justify-content-between align-items-center p-3">
-                <i class="fas fa-file-invoice-dollar" style="color: #333333;"></i>
-                <p class="mb-0">Sponcer Link</p>
-              </li>
-              <li class="list-group-item justify-content-between align-items-center p-3">
-                <i class="fas fa-donate" style="color: #cbce28;"></i>
-                <p class="mb-0">Donation Link</p>
-              </li>
-            </ul>
+            <form id="profileInput">
+              <div class="input-group input-group-sm  mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control form-field" placeholder="Your Socials" id="profileSocials" name="socials">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Sponsor</span>
+                </div>
+                <input type="text" class="form-control form-field" placeholder="Sponsors" id="profileSponsors" name="Sponsor">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <input type="text" class="form-control form-field" placeholder="Your highlight platform" id="profilePlatform" name="videoplatform">
+                <div class="input-group-append">
+                  <span class="input-group-text">Twitch/YouTube</span>
+                </div>
+              </div>
+              <button id="profileBtn" type="submit" class="btn btn-primary btn-info mb-3">Submit</button>
+            </form>
+        
+         
+          </div>
+          </div>
           </div>
         </div>
       </div>
