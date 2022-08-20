@@ -41,7 +41,7 @@
   * Gabriel Adams Bogar
   * Richard Tran (https://github.com/rtran1029)
   * Connor Breslin
-  * Jesus Velez
+  * Jesus Velez (https://github.com/JVelezFD)
 
   ## Website: 
   
@@ -50,5 +50,5 @@
 
   [Email](mailto:gabeab34@gmail.com)
 
-  [GitHub](https://github.com/gabeab34)(https://github.com/JVelezFD)
+  [GitHub](https://github.com/gabeab34)
 
