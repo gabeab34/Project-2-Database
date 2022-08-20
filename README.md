@@ -37,9 +37,9 @@
   
 
   ## Contributions: 
-  * John Evenden
+  * John Evenden 
   * Gabriel Adams Bogar
-  * Richard Tran
+  * Richard Tran (https://github.com/rtran1029)
   * Connor Breslin
   * Jesus Velez
 
